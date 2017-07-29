@@ -1,14 +1,16 @@
 $('document').ready(function() {
-
   var moves = [];
 
-  $('#Sumit').on("click", function() {
-    event.preventDefault();
-    var button = $("<button>");
-    var text = $("#text").val();
-    button.text(text);
 
-    $("#buttons").append(button);
 
-  })
-}
+
+  $("#addBtn").on("click", function(e) {
+    var newMove = $("#text").val();
+    var newButton = $("<button>");
+    newButton.text(newMove);
+    $("#buttons").append(newButton);
+
+
+  });
+
+});
